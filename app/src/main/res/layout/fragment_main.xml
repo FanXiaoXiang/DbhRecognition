@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bjfu.dbhrecognition.activity.fragment.MainFragment">
+    <FrameLayout
+        android:id="@+id/flSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTransDark" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/scan_stroke">
+
+                <ImageView
+                    android:id="@+id/ivCenterLine"
+                    android:layout_width="@dimen/scan_stroke_line"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorAccent" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTransDark" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransDark" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/take_picture_info_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="false">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/show_picture_bg_width"
+            android:layout_height="@dimen/take_picture_info_height"
+            android:layout_centerVertical="true">
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/ibCancelScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cancel_scan" />
+
+            <ImageButton
+                android:id="@+id/ibStartScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/start_scan" />
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/cbFlash"
+            style="@style/ShowLineCheckBoxTheme"
+            android:layout_width="@dimen/show_picture_size"
+            android:layout_height="@dimen/show_picture_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

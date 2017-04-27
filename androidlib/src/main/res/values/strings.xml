@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidLib</string>
+    <string name="checking_permissions">检测权限中...</string>
+    <string name="gps_permisson_exception">GPS权限异常</string>
+
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+</resources>

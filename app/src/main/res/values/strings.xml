@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DBH Scan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diameter_result">胸径结果</string>
+    <string name="done">确定</string>
+    <string name="parse_error">解析错误</string>
+</resources>

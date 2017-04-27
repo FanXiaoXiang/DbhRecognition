@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chooseItems">
+        <item>@string/delete</item>
+        <item>@string/cancel</item>
+    </string-array>
+
+</resources>
